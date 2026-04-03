@@ -124,15 +124,9 @@ function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
         {/* Logo */}
-        <div 
-          className="flex items-center"
-          style={{ 
-            '--logo-text': isScrolled ? '#4B4B4D' : '#FFFFFF', 
-            '--logo-accent': '#C73336' 
-          } as React.CSSProperties}
-        >
+        <div className="flex items-center">
           <div className="w-40 h-auto">
-            <GusnaphLogo className="w-full h-full" />
+            <GusnaphLogo className="w-full h-full" dark={!isScrolled} />
           </div>
         </div>
 
@@ -350,13 +344,13 @@ function WhyUsSection() {
     <section className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-16">
-          {/* Visual Column — YouTube Short embed */}
+          {/* Visual Column — Vimeo embed */}
           <div className="w-full lg:w-1/2 relative order-2 lg:order-1 flex justify-center">
             <div className="relative w-[300px] md:w-[340px] rounded-[2rem] overflow-hidden shadow-2xl aspect-[9/16]">
               <iframe
-                src="https://www.youtube.com/embed/CQ78tn04gj4?autoplay=1&mute=1&loop=1&playlist=CQ78tn04gj4&controls=0&modestbranding=1&rel=0&playsinline=1"
+                src="https://player.vimeo.com/video/1175213004?autoplay=1&muted=1&loop=1&background=1&playsinline=1"
                 title="Apresentação Gusnaph"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
                 className="absolute inset-0 w-full h-full border-0"
               />
@@ -550,9 +544,7 @@ function Footer() {
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center gap-2 mb-6">
               <div className="w-48 h-auto">
-                 <div className="bg-white/90 p-2 rounded-lg inline-block">
-                    <GusnaphLogo className="w-32 h-auto" />
-                 </div>
+                <GusnaphLogo className="w-32 h-auto" dark />
               </div>
             </div>
             <p className="text-white/70 max-w-sm mb-6 leading-relaxed">
