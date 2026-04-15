@@ -481,20 +481,21 @@ function TestimonialsSection() {
 
 function PartnersSection() {
   // Logos que precisam de invert (têm partes brancas que somem no fundo branco)
-  const invertLogos = [logoMarca4, logoComigo]
+  // Logos com fundo preto precisam de invert
+  const invertLogos = [logoFriato, logoCicopal]
 
   const partnerLogos = [
     logoValeDoRancho,
     logoLopes,
     logoPiracanjuba,
     logoOlinda,
-    logoMarca4,
+    logoFriato,
     logoCepera,
     logoSeara1,
     logoAdelCoco,
     logoBunge,
     logoFrango,
-    logoComigo,
+    logoCicopal,
     logoSinha,
     logoNutriNectar,
     logoFugini,
@@ -504,8 +505,6 @@ function PartnersSection() {
     logoAmbidue,
     logoAmendoim,
     logoSeara2,
-    logoFriato,
-    logoCicopal,
   ];
 
   return (
