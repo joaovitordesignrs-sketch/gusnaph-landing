@@ -69,6 +69,8 @@ import logoAmbidue from "figma:asset/4867a64b5833fbf786486b85d2311b32b6c1b50a.pn
 import logoAmendoim from "figma:asset/532f843dac3fd46d077c97126b7246c1dedf3e9d.png";
 import logoSeara2 from "figma:asset/d4aef645d3df2a0f33a660a79a7afced7916fd47.png";
 import logoPiracanjuba from "figma:asset/68ec12c22bdd90a7acec01aee210d0f5fd46643c.png";
+import logoFriato from "./assets/logo_friato.png";
+import logoCicopal from "./assets/logo_cicopal.png";
 
 // Images from Unsplash
 const images = {
@@ -502,6 +504,8 @@ function PartnersSection() {
     logoAmbidue,
     logoAmendoim,
     logoSeara2,
+    logoFriato,
+    logoCicopal,
   ];
 
   return (
