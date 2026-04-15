@@ -478,6 +478,9 @@ function TestimonialsSection() {
 }
 
 function PartnersSection() {
+  // Logos que precisam de invert (têm partes brancas que somem no fundo branco)
+  const invertLogos = [logoMarca4, logoComigo]
+
   const partnerLogos = [
     logoValeDoRancho,
     logoLopes,
@@ -511,7 +514,7 @@ function PartnersSection() {
             {partnerLogos.map((logo, i) => (
               <div
                 key={i}
-                className="flex items-center justify-center w-[100px] h-[60px] md:w-[120px] md:h-[72px] grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
+                className={`flex items-center justify-center w-[100px] h-[60px] md:w-[120px] md:h-[72px] grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300 ${invertLogos.includes(logo) ? 'invert' : ''}`}
               >
                 <img
                   src={logo}
