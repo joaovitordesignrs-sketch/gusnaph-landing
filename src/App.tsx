@@ -518,12 +518,12 @@ function PartnersSection() {
             {partnerLogos.map((logo, i) => (
               <div
                 key={i}
-                className={`flex items-center justify-center w-[100px] h-[60px] md:w-[120px] md:h-[72px] grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300 ${invertLogos.includes(logo) ? 'invert' : ''}`}
+                className="flex items-center justify-center w-[100px] h-[60px] md:w-[120px] md:h-[72px] grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
               >
                 <img
                   src={logo}
                   alt={`Parceiro ${i + 1}`}
-                  className="max-w-full max-h-full object-contain"
+                  className={`max-w-full max-h-full object-contain ${invertLogos.includes(logo) ? 'dark-logo' : ''}`}
                 />
               </div>
             ))}

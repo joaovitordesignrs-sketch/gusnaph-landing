@@ -6,3 +6,12 @@
 @layer base {
   html, body, #root { min-height: 100vh; height: 100%; margin: 0; }
 }
+
+/* Logos com fundo preto — inverte só no estado cinza, volta ao normal no hover */
+.dark-logo {
+  filter: invert(1);
+  transition: filter 0.3s;
+}
+*:hover > .dark-logo {
+  filter: invert(0);
+}
