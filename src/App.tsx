@@ -69,8 +69,6 @@ import logoAmbidue from "figma:asset/4867a64b5833fbf786486b85d2311b32b6c1b50a.pn
 import logoAmendoim from "figma:asset/532f843dac3fd46d077c97126b7246c1dedf3e9d.png";
 import logoSeara2 from "figma:asset/d4aef645d3df2a0f33a660a79a7afced7916fd47.png";
 import logoPiracanjuba from "figma:asset/68ec12c22bdd90a7acec01aee210d0f5fd46643c.png";
-import logoFriato from "./assets/logo_friato.png";
-import logoCicopal from "./assets/logo_cicopal.png";
 
 // Images from Unsplash
 const images = {
@@ -173,7 +171,7 @@ function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center bg-gray-950 overflow-hidden">
       {/* Subtle dark texture overlay on entire section */}
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/95 to-gray-950/40 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/75 to-gray-950/20 z-10" />
 
       {/* Right side: Photo collage */}
       <div className="absolute inset-y-0 right-0 w-full lg:w-[55%] z-0">
@@ -480,22 +478,16 @@ function TestimonialsSection() {
 }
 
 function PartnersSection() {
-  // Logos que precisam de invert (têm partes brancas que somem no fundo branco)
-  // Logos com fundo preto precisam de invert
-  const invertLogos = [logoFriato, logoCicopal]
-
   const partnerLogos = [
     logoValeDoRancho,
     logoLopes,
     logoPiracanjuba,
     logoOlinda,
-    logoFriato,
     logoCepera,
     logoSeara1,
     logoAdelCoco,
     logoBunge,
     logoFrango,
-    logoCicopal,
     logoSinha,
     logoNutriNectar,
     logoFugini,
@@ -522,7 +514,7 @@ function PartnersSection() {
                 <img
                   src={logo}
                   alt={`Parceiro ${i + 1}`}
-                  className={`max-w-full max-h-full object-contain ${invertLogos.includes(logo) ? 'dark-logo' : ''}`}
+                  className="max-w-full max-h-full object-contain"
                 />
               </div>
             ))}
