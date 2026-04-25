@@ -171,7 +171,7 @@ function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center bg-gray-950 overflow-hidden">
       {/* Subtle dark texture overlay on entire section */}
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/75 to-gray-950/20 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/40 to-transparent z-10" />
 
       {/* Right side: Photo collage */}
       <div className="absolute inset-y-0 right-0 w-full lg:w-[55%] z-0">
@@ -183,7 +183,7 @@ function HeroSection() {
               alt="Centro de Distribuição Gusnaph"
               className="w-full h-full object-cover scale-105"
             />
-            <div className="absolute inset-0 bg-black/20" />
+            <div className="absolute inset-0 bg-black/10" />
             <span className="absolute bottom-3 left-3 text-white/60 text-xs tracking-widest uppercase">Centro de Distribuição</span>
           </div>
           {/* Granja - Ovos */}
@@ -208,7 +208,7 @@ function HeroSection() {
           </div>
         </div>
         {/* gradient to blend collage into the dark left side */}
-        <div className="absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-gray-950 to-transparent" />
+        <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-gray-950/70 to-transparent" />
       </div>
 
       {/* Left side: Text content */}
