@@ -84,7 +84,8 @@ const images = {
 };
 
 const WHATSAPP_NUMBER = "556232924839";
-const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
+const WHATSAPP_MESSAGE = "Olá! Vim pelo site e quero fazer uma cotação. Pode me ajudar?";
+const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 const BRAND_RED = "#C73336";
 
 function WhatsAppButton({ text = "Falar no WhatsApp", className = "", variant = "primary" }) {
